@@ -646,6 +646,7 @@ sqlGetResults <-
                 data[[i]] <- type.convert(as.character(data[[i]]),
                                           na.strings = na.strings,
                                           as.is = !stringsAsFactors,
+					  numerals = "no.loss",
                                           dec = dec)
         }
     }
